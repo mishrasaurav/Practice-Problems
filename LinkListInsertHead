@@ -17,12 +17,12 @@ void insertAtHead(node*&head,int data){
     head = n;   
     
 }
-
+//here head is passed by value so in main function the value of head doesn't become null at the end.
 void print(node*head){
-    node* temp = head;
-    while(temp!=NULL){
-        cout<<temp->data<<"-->";
-        temp = temp->next;
+    
+    while(head!=NULL){
+        cout<<head->data<<"-->";
+        head = head->next;
     }
     
     
