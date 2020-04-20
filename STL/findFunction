@@ -1,0 +1,23 @@
+#include<iostream>
+#include<algorithm>
+using namespace std;
+int main()
+{
+    
+    int a[5]={1,2,3,4,5};
+    int n = sizeof(a)/sizeof(a[0]);
+    
+    int key;
+    cin>>key;
+    
+    int *index = find(a,a+n,key);
+    
+    
+    
+    int found = abs(a - index);
+    if(found==5){
+        cout<<"not found";
+    }
+    else
+    cout<<found<<"index";
+}
