@@ -1,0 +1,29 @@
+#include<iostream>
+#include<vector>
+#include<cstring>
+using namespace std;
+
+
+void removeDup(char c[]){
+    int j=0;
+    
+   
+    for(int i=1;i<strlen(c);i++){
+        if(c[i]!=c[j]){
+            j++;
+            c[j]=c[i];
+        }
+       
+    }
+     c[j+1]='\0';
+    
+   return;
+}
+int main(){
+    
+    char c[1000];
+    cin.getline(c,1000);
+    removeDup(c);
+    cout<<c;
+    
+}
