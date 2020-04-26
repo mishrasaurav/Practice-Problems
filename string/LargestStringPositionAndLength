@@ -1,1 +1,25 @@
-Given N strings, Find the largest string. 
+#include<iostream>
+#include<cstring>
+using namespace std;
+int main(){
+    string s;
+    int N;
+    cin>>N;
+    int loc;
+    int *a = new int[N];
+    for(int i=0;i<=N;i++){
+        getline(cin,s);
+        a[i]=s.length();
+    }
+    
+int max = a[0];
+for(int i=1;i<=N;i++){
+    if(a[i]>max){
+        max = a[i];
+        loc = i;
+    }
+}
+ 
+cout<<loc<<" "<<max;
+}
+
