@@ -1,0 +1,24 @@
+#include<iostream>
+#include<cstring>
+using namespace std;
+int main(){
+    string s;
+    int N;
+    cin>>N;
+    int max=0;
+    string larg;
+    for(int i=0;i<=N;i++){
+      getline(cin,s);
+     int len = s.length();
+     if(len>max){
+         max = s.length();
+        larg = s;
+         
+     }
+     
+ 
+    }
+    
+ 
+cout<<larg<<" "<<max;
+}
